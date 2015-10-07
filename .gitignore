@@ -1,0 +1,10 @@
+.httr-oauth
+.DS_Store
+
+/data
+data
+/templates
+templates
+
+config.py
+*.pyc
