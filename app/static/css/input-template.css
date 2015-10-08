@@ -1,0 +1,75 @@
+html {height:100%;}
+
+body {
+  padding-top: 50px;
+  background: url('/static/images/bg2.jpg') no-repeat center center fixed; */;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  vertical-align: middle;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+body {
+  padding-top: 50px;
+}
+
+.input-template {
+  padding: 40px 15px;
+  text-align: center;
+  top: 100px;
+  vertical-align: 80%
+}
+
+.container-fluid{
+  position: fixed;
+  top: 5%;
+  left: 60%;
+
+}
+
+.navbar-inverse{
+  background-color:rgba(0,0,0,1)
+}
+
+input[type="text"]{
+  color:black;
+}
+
+h2.buzz {
+  color:white;font-size:60px;
+}
+
+span.eat {
+  color: #45AF0C;
+  font-size:60px
+}
+
+p.tag{
+  font-size:28px;
+}
+
+.navbar-nav > li > a {
+    font-size: 16px;
+    /*vertical-align: middle; */
+}
+
+
+.navbar-nav > li > a > i {
+    font-size: 28px;
+    /* color: #45AF0C; */
+    vertical-align: middle;
+}
+
+/*#sfields{
+  position: fixed;
+  top: 220px;
+  right: -270px;
+}
+*/
