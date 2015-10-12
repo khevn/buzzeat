@@ -1,0 +1,45 @@
+html {height:100%;}
+
+
+
+#mymap{
+  position: fixed;
+  margin-top: 2.5%;
+  right: 0;
+}
+
+#imgrid{
+	margin-top: 2%;
+}
+
+
+body {
+  padding-top: 50px;
+  background-color: white !important;
+}
+
+.output-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+input[type="text"]{
+  color:black;
+}
+
+.navbar-inverse{
+  /*background-color: green;*/
+}
+
+.input-form {
+  padding: 40px 15px;
+  text-align: center;
+  top: 100px;
+  vertical-align: 80%
+}
+
+.navbar-nav > li > a > i {
+    font-size: 26px;
+    /* color: #45AF0C; */
+    vertical-align: middle;
+}

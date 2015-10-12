@@ -2,7 +2,7 @@ html {height:100%;}
 
 body {
   padding-top: 50px;
-  background: url('/static/images/bg2.jpg') no-repeat center center fixed; */;
+  background-color: black;
   color: white;
   text-align: center;
   background-size: cover;
@@ -28,9 +28,10 @@ body {
 }
 
 .container-fluid{
-  position: fixed;
-  top: 5%;
-  left: 60%;
+  position: center;
+  padding-right: 200px;
+  padding-left: 200px;
+  top: 10%;
 
 }
 
@@ -42,17 +43,8 @@ input[type="text"]{
   color:black;
 }
 
-h2.buzz {
-  color:white;font-size:60px;
-}
-
-span.eat {
-  color: #45AF0C;
-  font-size:60px
-}
-
 p.tag{
-  font-size:28px;
+  font-size:30px;
 }
 
 .navbar-nav > li > a {
