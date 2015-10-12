@@ -1,9 +1,13 @@
 .httr-oauth
 .DS_Store
 
-/data
-data
+/data/*.tsv
 
 config.py
 *.pyc
 *.ipynb
+
+.gitignore
+
+buzzeat_400*
+buzzeat_300*
