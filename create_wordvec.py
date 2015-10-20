@@ -64,24 +64,24 @@ engine = sqlalchemy.create_engine(
 	'mysql://%(user)s:%(pass)s@%(host)s' % config.database)
 engine.execute('use %s' % config.database['name'])  # select db
 recent_data = (datetime.now() - timedelta(weeks=12)).strftime("%Y-%m-%d")
-sql_query = '''select date, lat, `long`, image_url, likes, text, post_url
-			from instagram
-			where `date` > '%s'
-			and lat between %s and %s
-			and `long` between %s and %s
-			order by `date` desc, likes desc
+sql_query = '''SELECT post_date, latitude, longitude, image_url, likes, caption, post_url
+			FROM instagram
+			WHERE post_date > '%s'
+			AND latitude between %s AND %s
+			AND longitude between %s AND %s
+			ORDER BY post_date DESC, likes DESC
 			''' % (recent_data, geo_box[0], geo_box[1],  geo_box[2],  geo_box[3])
 
 posts = pd.read_sql_query(sql_query, engine, parse_dates=['date'])
 n_points = posts.shape[0]
 
-posts = posts[posts['text'].notnull()]
+posts = posts[posts['caption'].notnull()]
 posts.reset_index(drop = True)
 
 sentences = []  # Initialize an empty list of sentences
 
 print "Parsing sentences from training set"
-for caption in posts["text"]:
+for caption in posts['caption']:
     sentences += caption_to_sentences(caption, tokenizer)
 
 # Set values for various parameters
